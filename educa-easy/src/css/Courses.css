@@ -1,0 +1,224 @@
+.courses-page {
+  min-height: 100vh;
+  background-color: #0a0f1c;
+  color: #ffffff;
+  padding: 72px 6vw 40px;
+}
+
+/* Hero da página de cursos */
+.courses-hero {
+  margin-bottom: 40px;
+}
+
+.courses-hero-content {
+  max-width: 990px;
+  margin: 0 auto;
+  background-color: #151a2b;
+  border-radius: 22px;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52px;
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.75);
+}
+
+.courses-hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.courses-hero-text h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.courses-hero-text p {
+  font-size: 1.08rem;
+  line-height: 1.5;
+  color: #c3c6d1;
+}
+
+.courses-hero-animation {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* deixa a animação maior e responsiva */
+.courses-hero-animation canvas,
+.courses-hero-animation svg,
+.courses-hero-animation div {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+}
+
+/* Lista de cursos */
+.courses-main {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ===== Card de curso (CourseCard) ===== */
+
+.course-card-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-card {
+  width: 100%;
+  min-height: 150px;
+  background: linear-gradient(135deg, #171c2e, #101420);
+  border-radius: 18px;
+  padding: 20px 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.85);
+  filter: brightness(1.02);
+}
+
+.card-left {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-right {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* título e descrição do card */
+.course-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.course-description {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  text-align: left;
+}
+
+/* badges de skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #0e111d;
+  font-size: 0.78rem;
+  color: #e4e4e4;
+}
+
+/* botão “Começar agora!” dentro do card, se usar */
+.start-button {
+  margin-top: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(to right, #860554, #fd89ef);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* meta de duração / nível */
+.course-meta {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: #c3c6d1;
+}
+
+/* lado direito do card (ex: coração) */
+.heart-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 18px;
+  background-color: #0e111d;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+
+.heart {
+  font-size: 1.3rem;
+}
+
+
+@media (max-width: 900px) {
+  .courses-hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 22px;
+    gap: 28px;
+  }
+
+  .courses-hero-text {
+    text-align: center;
+  }
+
+  .courses-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .courses-hero-animation canvas,
+  .courses-hero-animation svg,
+  .courses-hero-animation div {
+    max-width: 260px;
+  }
+
+  .course-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-right {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .courses-page {
+    padding: 64px 5vw 32px;
+  }
+
+  .courses-hero-text h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,112 @@
+.account-page {
+  min-height: 100vh;
+  background-color: #0a0f1c;
+  color: #ffffff;
+  padding: 80px 20px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.account-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #151a2b;
+  border-radius: 16px;
+  padding: 28px 24px 32px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+}
+
+.account-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.account-section {
+  margin-top: 22px;
+}
+
+.account-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.account-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px; 
+  font-weight: 500; 
+  color: #e4e4e4;
+  gap: 4px;
+  text-align: left; 
+}
+
+
+.account-form input {
+  border-radius: 8px;
+  border: 1px solid #303548;
+  background-color: #0e111d;
+  color: #ffffff;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.account-form button {
+  margin-top: 8px;
+  align-self: flex-start;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(to right, #860554, #fd89ef);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.account-courses-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.account-course-card {
+  background-color: #0e111d;
+  border-radius: 12px;
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.account-course-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.account-course-card p {
+  font-size: 13px;
+  color: #c9c9c9;
+}
+
+.account-course-card button {
+  margin-top: 6px;
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #860554;
+  background: transparent;
+  color: #fd89ef;
+  font-size: 12px;
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+/* Navbar geral */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;      /* garante que ocupe toda a largura */
+    z-index: 1000;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #0a0f1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo / nome do site */
+.navbar-logo a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Container dos links */
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Links da navbar */
+.navbar-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(124, 124, 124);
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s, text-shadow 0.3s;
+}
+
+/* Efeito hover */
+.navbar-links a:hover {
+  background-color: #0a0f1c;
+  color: #821fb0;
+  text-shadow: 0 0 8px #ce03c4;
+}
+
+.navbar-user-button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
